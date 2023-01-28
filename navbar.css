@@ -68,7 +68,6 @@ nav ul li a:hover{
     display: block;
     background: #000;
     top: 80px;
-    left: -100%;
     transition: all .5s;
     text-align: center;
    }
