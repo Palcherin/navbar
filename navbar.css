@@ -1,0 +1,99 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+
+}
+nav{
+    background: lightseagreen;
+    height: 80px;
+    width: 100%;
+}
+nav h1{
+    
+}
+nav ul{
+    float: right;
+    list-style: none;
+    text-decoration: none;
+    margin-right: 40px;
+}
+nav ul li{
+    display: inline-block;
+    justify-content: space-between;
+
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    justify-content: space-between;
+    margin: 0 5px;
+    padding: 5px;
+    font-size: 20px;
+}
+#check{
+    display: none;
+
+}
+nav i{
+    display: none;
+    color: lightseagreen;
+    float: right;
+}
+nav ul li a.active{
+    background: #fff;
+    color: #000;
+    border-radius: 7px;
+}
+nav ul li a.active:hover{
+    background: red;
+}
+nav ul li a:hover{
+    transition: .5s;
+    color: #000;
+}
+
+    
+
+@media (max-width: 980px) {
+    nav ul li a{
+        font-size: 15px;
+    }
+    
+}
+@media (max-width: 600px) {
+   ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    display: block;
+    background: #000;
+    top: 80px;
+    left: -100%;
+    transition: all .5s;
+    text-align: center;
+   }
+   nav ul li{
+    display: block;
+    margin: 10px 0;
+   }
+   nav ul li a.active{
+    background: none;
+    color: #fff;
+   }
+   nav ul li a:hover{
+    transition: 0.5s ease-in-out;
+    color: lightseagreen;
+    background: 
+   }
+   nav i:checked ~ ul{
+    left: 0;
+   }
+   nav i{
+    color: #000;
+    margin-right: 30px;
+   }
+   .nav.open{
+    right:2% ;
+}
+   
+}
